@@ -43,6 +43,28 @@
       <li class="nav-item">
         <a routerLink="/login" class="nav-link">Login</a>
       </li>
+      <li class="nav-item">
+        <a
+          routerLink="/home"
+          class="nav-link dropleft"
+          data-toggle="dropdown"
+          role="button"
+        >
+          <img
+            src="../../../assets/icons/more_vert-black-48dp.svg"
+            width="32"
+            height="30"
+            alt="Config"
+          />
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+          </div>
+        </a>
+      </li>
     </ul>
     <!-- <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" />
@@ -52,45 +74,3 @@
     </form> -->
   </div>
 </nav>
-
-<!-- <nav class="navbar navbar-dark navbar-expand-md bg-secondary">
-  <div class="container" ml="0">
-    <a routerLink="/" class="navbar-brand">
-      <img
-        src="../../../assets/icons/mk.svg"
-        width="46"
-        height="46"
-        alt="MK-Logo"
-      />
-      Boilerplate
-    </a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-toggle="collapse"
-      data-target="#navbarMain"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div>
-      <div class="collapse navbar-collapse" id="navbarMain">
-         goes to the right 
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a routerLink="/" class="nav-link">Dashboard</a>
-          </li>
-        </ul>
-         goes to the left 
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a routerLink="/register" class="nav-link">Register</a>
-          </li>
-          <li class="nav-item">
-            <a routerLink="/login" class="nav-link">Login</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</nav> -->

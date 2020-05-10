@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ticket-tracker": {
+    "boilerplate": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ticket-tracker",
+            "outputPath": "dist/boilerplate",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -22,7 +22,6 @@
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
               "src/styles.css",
-              "node_modules/font-awesome/css/font-awesome.css",
               "node_modules/bootstrap/dist/css/bootstrap.css"
             ],
             "scripts": [
@@ -65,18 +64,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ticket-tracker:build"
+            "browserTarget": "boilerplate:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ticket-tracker:build:production"
+              "browserTarget": "boilerplate:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ticket-tracker:build"
+            "browserTarget": "boilerplate:build"
           }
         },
         "test": {
@@ -86,7 +85,7 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
-            "assets": ["src/favicon.ico", "src/assets"],
+            "assets": ["src/assets/icons/mk.svg", "src/assets"],
             "styles": ["src/styles.css"],
             "scripts": []
           }
@@ -106,16 +105,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "ticket-tracker:serve"
+            "devServerTarget": "boilerplate:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "ticket-tracker:serve:production"
+              "devServerTarget": "boilerplate:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "ticket-tracker"
+  "defaultProject": "boilerplate"
 }
