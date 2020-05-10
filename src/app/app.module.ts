@@ -7,9 +7,10 @@ import { SidenavComponent } from './components/sidenav/sidenav.component';
 
 import { SidebarModule } from 'ng-sidebar';
 import { UserDashboardComponent } from './components/user-dashboard/user-dashboard.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
-  declarations: [AppComponent, NavComponent, SidenavComponent, UserDashboardComponent],
+  declarations: [AppComponent, NavComponent, SidenavComponent, UserDashboardComponent, FooterComponent],
   imports: [BrowserModule, SidebarModule],
   providers: [],
   bootstrap: [AppComponent],
