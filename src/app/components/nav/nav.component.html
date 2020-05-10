@@ -1,5 +1,5 @@
-<nav class="navbar navbar-dark bg-secondary">
-  <a class="navbar-brand">
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  <a routerLink="/" class="navbar-brand">
     <img
       src="../../../assets/icons/mk.svg"
       width="46"
@@ -9,8 +9,88 @@
     Boilerplate
   </a>
 
-  <div>
-    <a class="navbar-brand" href="#">Log In</a>
-    <a class="navbar-brand" href="#">Sign Up</a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarToogle"
+    aria-controls="navbarToogle"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarToogle">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="#"
+          >Home <span class="sr-only">(current)</span></a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Balance</a>
+      </li>
+    </ul>
+
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a routerLink="/register" class="nav-link">Register</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="/login" class="nav-link">Login</a>
+      </li>
+    </ul>
+    <!-- <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" />
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+        Search
+      </button>
+    </form> -->
   </div>
 </nav>
+
+<!-- <nav class="navbar navbar-dark navbar-expand-md bg-secondary">
+  <div class="container" ml="0">
+    <a routerLink="/" class="navbar-brand">
+      <img
+        src="../../../assets/icons/mk.svg"
+        width="46"
+        height="46"
+        alt="MK-Logo"
+      />
+      Boilerplate
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarMain"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div>
+      <div class="collapse navbar-collapse" id="navbarMain">
+         goes to the right 
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a routerLink="/" class="nav-link">Dashboard</a>
+          </li>
+        </ul>
+         goes to the left 
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a routerLink="/register" class="nav-link">Register</a>
+          </li>
+          <li class="nav-item">
+            <a routerLink="/login" class="nav-link">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav> -->
