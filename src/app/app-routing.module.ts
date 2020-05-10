@@ -8,6 +8,7 @@ import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
+import { NotFoundComponent } from './components/notfound/notfound.component';
 
 // here we configure the routes. Routes tell the Router which view to display when a user clicks a link or pastes a URL into the browser address bar.
 //it has basically two propertis:
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
+  { path: '**', component: NotFoundComponent },
 ];
 
 @NgModule({

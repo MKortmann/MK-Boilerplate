@@ -1,11 +1,9 @@
 <div
   class="footer card-footer text-muted d-flex flex-row justify-content-between"
 >
+  <div>&copy; {{ "TRANSLATE.FOOTER.LABEL_LEFT" | translate }}</div>
   <div>
-    &copy; Marcelo Kortmann
-  </div>
-  <div>
-    Version: 1.0
+    {{ "TRANSLATE.FOOTER.LABEL_MIDDLE" | translate }}
   </div>
   <div>
     <div class="btn-group dropup dropleft">
@@ -18,9 +16,9 @@
         />
       </a>
       <div class="dropdown-menu">
-        <button class="dropdown-item">EN</button>
-        <button class="dropdown-item">DE</button>
-        <button class="dropdown-item">PT</button>
+        <button class="dropdown-item" (click)="change('en')">EN</button>
+        <button class="dropdown-item" (click)="change('de')">DE</button>
+        <button class="dropdown-item" (click)="change('pt')">PT</button>
       </div>
     </div>
   </div>

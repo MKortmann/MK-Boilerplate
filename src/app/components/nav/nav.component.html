@@ -6,7 +6,7 @@
       height="46"
       alt="MK-Logo"
     />
-    Boilerplate
+    {{ "TRANSLATE.NAVBAR.TITLE" | translate }}
   </a>
 
   <button
@@ -25,23 +25,32 @@
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
       <li class="nav-item active">
         <a class="nav-link" href="#"
-          >Home <span class="sr-only">(current)</span></a
+          >{{ "TRANSLATE.NAVBAR.HOME" | translate }}
+          <span class="sr-only">(current)</span></a
         >
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="about">About</a>
+        <a class="nav-link" routerLink="about">{{
+          "TRANSLATE.NAVBAR.ABOUT" | translate
+        }}</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" href="#">Balance</a>
+        <a class="nav-link disabled" href="#">{{
+          "TRANSLATE.NAVBAR.NAV_2" | translate
+        }}</a>
       </li>
     </ul>
 
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a routerLink="/register" class="nav-link">Register</a>
+        <a routerLink="/register" class="nav-link">{{
+          "TRANSLATE.NAVBAR.REGISTER" | translate
+        }}</a>
       </li>
       <li class="nav-item">
-        <a routerLink="/login" class="nav-link">Login</a>
+        <a routerLink="/login" class="nav-link">{{
+          "TRANSLATE.NAVBAR.LOGIN" | translate
+        }}</a>
       </li>
       <li class="nav-item">
         <a

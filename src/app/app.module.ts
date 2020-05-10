@@ -11,6 +11,16 @@ import { AboutComponent } from './components/about/about.component';
 import { RegisterComponent } from './components/register/register.component';
 import { LoginComponent } from './components/login/login.component';
 
+// For ngx translation
+import {
+  TranslateModule,
+  TranslateLoader,
+  TranslateService,
+} from '@ngx-translate/core';
+// our config file for ngx-translate bib
+import { CustomTranslateLoader } from 'src/customTranslateLoader';
+import { NotFoundComponent } from './components/notfound/notfound.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,9 +30,20 @@ import { LoginComponent } from './components/login/login.component';
     AboutComponent,
     RegisterComponent,
     LoginComponent,
+    NotFoundComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useClass: CustomTranslateLoader,
+      },
+    }),
+  ],
   providers: [],
+
   bootstrap: [AppComponent],
 })
 export class AppModule {}
