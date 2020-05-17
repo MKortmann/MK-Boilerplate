@@ -21,7 +21,7 @@ export const pt = {
       TITLE: 'Sobre',
     },
     FOOTER: {
-      LABEL_LEFT: '&copy; Marcelo Kortmann',
+      LABEL_LEFT: 'Marcelo Kortmann',
       LABEL_MIDDLE: 'Versão 1.0.0',
     },
   },

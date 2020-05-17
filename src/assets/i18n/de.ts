@@ -21,7 +21,7 @@ export const de = {
       TITLE: 'Anmeldung',
     },
     FOOTER: {
-      LABEL_LEFT: '&copy; Marcelo Kortmann',
+      LABEL_LEFT: 'Marcelo Kortmann',
       LABEL_MIDDLE: 'Verion 1.0.0',
     },
   },
